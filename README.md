@@ -3,6 +3,8 @@ Experiments to capture internet streaming radio
 
 # The Spy FM
 
+https://thespyfm.com/
+
 The simplest programmatic endpoints that The Spy publishes are:
 ```
 # AAC/HLS redirect:
@@ -128,6 +130,9 @@ Use StreamTheWorld’s “live_stream_config” XML
 Fetch:
 ```
 https://playerservices.streamtheworld.com/api/livestream?version=1.8&mount=KOSUHD2
+
+curl -A "Mozilla/5.0" "https://playerservices.streamtheworld.com/api/livestream?version=1.2&mount=SPYFMAAC&lang=en"
+
 ```
 
 Inspect the XML to see if there are tags for metadata. (The sample XML configuration I saw in search results includes <mountpoints> and <status> etc.)  ￼
